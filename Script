@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Objective is to search if a directory exists called backup, and if it does not - then we need to create one.
+
+# Check if the "backup" directory exists
+if [ ! -d "./backup" ]; then
+  # If it doesn't exist, create the "backup" directory
+  mkdir backup
+  echo "Directory 'backup' created."
+else
+  echo "Directory 'backup' already exists."
+fi
+
+#save shellscript, make executable with chmod +x backupdir.sh, run the script ./backupdir.sh
